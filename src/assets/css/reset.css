@@ -7,11 +7,29 @@
 :root {
   --color-text: #666;
   --color-high-text: #ff5777;
-  --color-text: #ff8198;
+  --color-tint: #ff8198;
   --color-background: #fff;
   --font-size: 14px;
   --line-height: 1.5;
 }
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('../images/tabbar/iconfont.eot');
+  src: url('../images/tabbar/iconfont.eot?#iefix') format('embedded-opentype'),
+      url('../images/tabbar/iconfont.woff2') format('woff2'),
+      url('../images/tabbar/iconfont.woff') format('woff'),
+      url('../images/tabbar/iconfont.ttf') format('truetype'),
+      url('../images/tabbar/iconfont.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 12px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 
 html {
 overflow-x:hidden;
