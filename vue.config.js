@@ -1,13 +1,16 @@
 module.exports = {
-  configureWebPack: {
+  lintOnSave: false,//eslint
+
+  configureWebpack: {
     resolve: {
       extensions: [],
       alias: {
-        '@': 'src',
-        'common': 'src/common',
-        'components': 'src/components',
-        'network': 'src/network',
-        'views': 'src/views'
+        'assets': '@/assets',
+        'components': '@/components',
+        'network': '@/network',
+        'views': '@/views',
+        'common': '@/common'
+
       }
     }
   }

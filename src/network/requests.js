@@ -1,21 +1,21 @@
 import axios from 'axios'
 
-export function request(config){
+export function request(config) {
   const instance1 = axios.create({
-    baseURL:'http://123.207.32.32:8000',
-    timeout:5000
+    baseURL: 'http://152.136.185.210:8000/api/w6',
+    timeout: 5000
   })
-  instance1.interceptors.request.use(config=>{
+  instance1.interceptors.request.use(config => {
     return config
-  },err=>{
+  }, err => {
     console.log(err);
   })
-  instance1.interceptors.response.use(res=>{
+  instance1.interceptors.response.use(res => {
     return res.data
-  },err=>{
+  }, err => {
     console.log(err);
   })
-// 发送网络请求
+  // 发送网络请求
   return instance1(config)
   // instance1(baseConfig)
   //   .then(res=>{

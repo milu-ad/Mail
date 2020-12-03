@@ -1,18 +1,6 @@
 @import "./normalize.css";
 
 
-/* 获取根元素html */
-/* --large-size：50px;  定义变量的方式 */
-/* font-size: var(--large-size);   使用这个变量 */
-:root {
-  --color-text: #666;
-  --color-high-text: #ff5777;
-  --color-tint: #ff8198;
-  --color-background: #fff;
-  --font-size: 14px;
-  --line-height: 1.5;
-}
-
 @font-face {
   font-family: 'iconfont';
   src: url('../images/tabbar/iconfont.eot');
@@ -31,6 +19,19 @@
 }
 
 
+/* :root  获取根元素html */
+/* --large-size：50px;  定义变量的方式 */
+/* font-size: var(--large-size);   使用这个变量 */
+:root {
+  --color-text: #666;
+  --color-high-text: #ff5777;
+  --color-text: #ff8198;
+  /* --color-tint: #ff8198; 整体背景颜色*/
+  --color-background: #fff;
+  --font-size: 14px;
+  --line-height: 1.5;
+}
+
 html {
 overflow-x:hidden;
 overflow-y:scroll;
@@ -47,9 +48,12 @@ padding:0;
 body {
 color:#666666;
 font-family:Helvetica,Arial,sans-serif;
+user-select: none;
+/* 禁止用户鼠标再页面上选中文字/图片等 */
 }
 table {
 border-collapse:collapse;
+/* 合并表格边框 */
 }
 fieldset, img {
 border:0 none;

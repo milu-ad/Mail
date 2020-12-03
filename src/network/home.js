@@ -1,15 +1,25 @@
-import {request} from 'network/requests'
+import { request } from 'network/requests'
 //统一管理首页的所有数据请求--封装
 
 
-export function getHomeMultiData(){
+export function getHomeMultiData() {
   return request({
-    url:'/home/multidata'
-  },res=>{
+    url: '/home/multidata'
+  }, res => {
     console.log(res);
-  },err=>{
+  }, err => {
     console.log(err);
   })
-  
+
 }
+
+export function getHomeGoods(type, page) {
+  return request({
+    url: 'home/data',
+    params: {
+      type, page
+    }
+  })
+}
+
 

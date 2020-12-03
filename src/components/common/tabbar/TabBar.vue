@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: "TabBar",
+  name: "TabBar"
 };
 </script>
 
@@ -17,6 +17,7 @@ export default {
   display: flex;
   background-color: #eee;
   position: fixed;
+  z-index: 11;
   bottom: 0;
   right: 0;
   left: 0;

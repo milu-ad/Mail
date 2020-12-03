@@ -1,12 +1,10 @@
 <template>
-  <div>
-    <h2>档案</h2>
-  </div>
+  <div></div>
 </template>
 
 <script>
 export default {
-  name: "Profile"
+  name: "Category"
 };
 </script>
 
